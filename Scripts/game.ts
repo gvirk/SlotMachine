@@ -155,19 +155,19 @@ function resetAll() {
     game.removeChild(pointsWonText);
     game.removeChild(winningText);
     game.removeChild(jackpotText);
-    scoreText = new createjs.Text(playerMoney.toString(), "23px Arial", "#FFFFFF");
-    scoreText.x = 92
-    scoreText.y = 411;
+    scoreText = new createjs.Text(playerMoney.toString(), "15px Arial", "#FFFFFF");
+    scoreText.x = 128;
+    scoreText.y = 409;
     game.addChild(scoreText);
 
-    winningText = new createjs.Text(winNumber.toString(), "23px Arial", "#FFFFFF");
-    winningText.x = 330
-    winningText.y = 411;
+    winningText = new createjs.Text(winNumber.toString(), "15px Arial", "#FFFFFF");
+    winningText.x = 370;
+    winningText.y = 409;
     game.addChild(winningText);
 
-    pointsWonText = new createjs.Text(winnings.toString(), "23px Arial", "#FFFFFF");
-    pointsWonText.x = 213
-    pointsWonText.y = 411;
+    pointsWonText = new createjs.Text(winnings.toString(), "15px Arial", "#FFFFFF");
+    pointsWonText.x = 263;
+    pointsWonText.y = 409;
     game.addChild(pointsWonText);
 }
 
@@ -285,7 +285,7 @@ function determineWinnings() {
         //showWinMessage();
     }
     else {
-        lossNumber++;
+        lossNumber--;
         //showLossMessage();
     }
 
@@ -305,19 +305,19 @@ function spinButtonClicked(event: createjs.MouseEvent) {
     game.removeChild(jackpotText);
 
 
-    scoreText = new createjs.Text(playerMoney.toString(), "23px Arial", "#FFFFFF");
-    scoreText.x = 92
-    scoreText.y = 411;
+    scoreText = new createjs.Text(playerMoney.toString(), "15px Arial", "#FFFFFF");
+    scoreText.x = 128;
+    scoreText.y = 409;
     game.addChild(scoreText);
 
-    winningText = new createjs.Text(winNumber.toString(), "23px Arial", "#FFFFFF");
-    winningText.x = 330
-    winningText.y = 411;
+    winningText = new createjs.Text(winNumber.toString(), "15px Arial", "#FFFFFF");
+    winningText.x = 370;
+    winningText.y = 409;
     game.addChild(winningText);
 
-    pointsWonText = new createjs.Text(winnings.toString(), "23px Arial", "#FFFFFF");
-    pointsWonText.x = 213
-    pointsWonText.y = 411;
+    pointsWonText = new createjs.Text(winnings.toString(), "15px Arial", "#FFFFFF");
+    pointsWonText.x = 263;
+    pointsWonText.y = 409;
     game.addChild(pointsWonText);
 
 
